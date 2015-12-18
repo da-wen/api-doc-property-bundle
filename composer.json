@@ -1,0 +1,25 @@
+{
+  "name": "dawen/api-doc-property-bundle",
+  "type": "symfony-bundle",
+  "description": "A extension for nelmio api doc bundle to expose properties",
+  "keywords": ["nelmio", "api", "doc", "extension", "property", "api-doc-bundle", "bundle", "symfony"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Wendlandt",
+      "email": "dan.wendlandt@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/framework-bundle": "~2.3|~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-0": { "Dawen\\Bundle\\ApiDocPropertyBundle": "" }
+  },
+  "target-dir": "Dawen/Bundle/ApiDocPropertyBundle",
+  "minimum-stability": "stable"
+}
