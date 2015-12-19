@@ -3,6 +3,7 @@
 
 This bundle allows you to expose properties for api documentation that are not handled by json, jms or validator parsers
 
+
 ---
 
 ## Installation
