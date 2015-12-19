@@ -1,4 +1,6 @@
 # api-doc-property-bundle
+[![Build Status](https://travis-ci.org/da-wen/api-doc-property-bundle.svg?branch=master)](https://travis-ci.org/da-wen/api-doc-property-bundle)
+
 This bundle allows you to expose properties for api documentation that are not handled by json, jms or validator parsers
 
 ---
