@@ -164,19 +164,21 @@ class ApiDocPropertyParser implements ParserInterface
         /** @var ApiDocProperty $annotation */
         foreach($annotations as $annotation) {
             $class = null;
-            $description = null;
             $children = [];
 
             if ($annotation->isClass || $annotation->isArrayOfClasses) {
                 $class = $annotation->className;
-                $description = $annotation->description;
 
                 if (!empty($annotation->children)) {
                     $children = $this->mapAnnotations($annotation->children);
                 }
             }
 
-            $mappedData[$annotation->name] = $this->createDataset($annotation->type, $class, $children, $description);
+            $mappedData[$annotation->name] = $this->createDataset(
+                $annotation->type,
+                $class,
+                $children,
+                $annotation->description);
         }
 
         return $mappedData;
